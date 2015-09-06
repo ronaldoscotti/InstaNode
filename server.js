@@ -20,5 +20,5 @@ app.get('/', function(req, res) {
 });
 
 // Iniciando o servidor
-app.listem(3000);
+app.listen(3000);
 console.log('InstaNode rodando na porta 3000!');
