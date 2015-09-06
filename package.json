@@ -1,0 +1,23 @@
+{
+  "name": "instanode",
+  "version": "1.0.0",
+  "description": "A Node app that get the most popular Instagram photos using the Instagram API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronaldoscotti/InstaNode.git"
+  },
+  "keywords": [
+    "Node",
+    "Instagram"
+  ],
+  "author": "Ronaldo Scotti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ronaldoscotti/InstaNode/issues"
+  },
+  "homepage": "https://github.com/ronaldoscotti/InstaNode#readme"
+}
