@@ -11,12 +11,18 @@ app.use(express.static(__dirname + '/public'));
 app.set('view engine', 'ejs');
 
 // Configurando o App Instagram
+ig.use({
+	client_id: 'fdea49e267434822af690ed13f9f5189',
+	client_secret: '44da8562eea74345835b75300ff046cb'
+});
 
 // Definindo as rotas
-app.get('/', function(req, res) {
+app.get('/', function (req, res) {
 	// Usando a variavel instagram para buscar as fotos populares
-	// Renderizando e view com os dados retornados pela API
-	res.render('pages/index');
+	ig.media_popular(function (err, medias, remaining, limit) {
+		// Renderizando e view com os dados retornados pela API
+		res.render('pages/index', { grams: medias });
+	});
 });
 
 // Iniciando o servidor
