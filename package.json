@@ -15,9 +15,9 @@
     "Instagram"
   ],
   "dependencies": {
+    "ejs": "^2.3.3",
     "express": "^4.13.3",
-    "instagram-node": "^0.5.8",
-    "ejs": "^2.3.3"
+    "instagram-node": "^0.5.8"
   },
   "author": "Ronaldo Scotti",
   "license": "ISC",
