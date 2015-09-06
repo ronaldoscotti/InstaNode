@@ -1,6 +1,40 @@
 body {
-	padding-top:50px;
+	background-image: url('../img/concrete_seamless.png');
+	background-repeat: repeat;
+	padding-top:30px;
 }
-footer {
-	padding:50px;
+
+footer {padding:50px;}
+
+.instagram-pic {
+	position:relative;
+	padding:10px;
+	overflow:hidden;
+}
+
+.instagram-pic .img {
+	padding:5px;
+	border-radius:2px;
+	box-shadow:0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.instagram-bar {
+	position:absolute;
+	bottom:80px;
+	width:100%;
+	left:0;
+	padding-left:30px;
+	padding-right:30px;
+	color:#FFF;
+}
+
+.instagram-bar span {margin-right:5px;}
+.instagram-bar .likes {float:left;}
+.instagram-bar .comments {float:right;}
+.media {margin-top: 7px;}
+.user-name {margin-top:5px;}
+
+.header-text{
+	color: #999;
+	font-style: italic;
 }
