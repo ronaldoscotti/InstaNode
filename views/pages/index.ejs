@@ -11,7 +11,35 @@
 	</header>
 	
 	<main>
-		As fotos aparecerão aqui
+		<div class="row">
+			<% grams.forEach(function(gram) { %>
+			<div class="instagram-pic col-sm-3">
+				<a href="<%= gram.link %>" target="_blank">
+					<img src="<%= gram.images.standard_resolution.url %>" class="img-responsive img">
+				</a>
+				<div class="instagram-bar">
+					<div class="likes">
+						<span class="glyphicon glyphicon-heart"></span>
+						<%= gram.likes.count %>
+					</div>
+					<div class="comments">
+						<span class="glyphicon glyphicon-comment"></span>
+						<%= gram.comments.count %>
+					</div>
+				</div>
+				<div class="media">
+  					<div class="media-left">
+    					<a href="#">
+      						<img class="img-circle" src="<%= gram.user.profile_picture %>" style="width: 32px;">
+    					</a>
+  					</div>
+  					<div class="media-body">
+    					<p class="user-name"><%= gram.user.username %></p>
+  					</div>
+				</div>
+			</div>
+			<% }); %>
+		</div>
 	</main>
 	
 	<footer>
